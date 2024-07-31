@@ -1,9 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 import '../assets/styles/App.css'
-import Footer from './Footer'
 import Header from './Header'
-import HomePage from './HomePage'
-import WhatsApp from './WhatsApp'
+import Home from './Home'
+import Footer from './Footer'
 
 function App() {
   return (
@@ -11,10 +10,8 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Home />} />
       </Routes>
-
-      <WhatsApp />
 
       <Footer />
     </>

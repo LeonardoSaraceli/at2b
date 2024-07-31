@@ -5,15 +5,12 @@
 }
 
 html {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: black white;
 }
 
 #root {
   display: grid;
-  grid-template-rows: 6.25rem minmax(6.25rem, 1fr) 6.25rem;
-  height: 100vh;
-
-  ul {
-    list-style-type: none;
-  }
 }

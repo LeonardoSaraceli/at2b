@@ -1,0 +1,52 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem 8rem;
+  background-color: #b3e2a7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  #left-side {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 3.5rem;
+    justify-self: left;
+
+    li {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      gap: 0.5rem;
+      align-items: center;
+
+      #phone-number:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  nav {
+    display: grid;
+    align-items: center;
+    justify-self: right;
+
+    #right-side {
+      display: grid;
+      grid-template-columns: repeat(4, max-content);
+      gap: 3.5rem;
+
+      li:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
