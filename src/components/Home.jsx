@@ -2,10 +2,10 @@ import quemSomos from '../assets/images/quem-somos.png'
 import consultoria from '../assets/images/consultoria.png'
 import contato from '../assets/images/contato.png'
 import '../assets/styles/Home.css'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
-  document.title = 'AT2B - Página Inicial'
+  const navigate = useNavigate()
 
   return (
     <main id="home">
@@ -19,16 +19,14 @@ export default function Home() {
             envolvam a criação, manuseio e expedição de documentos.
           </p>
 
-          <Link to={'/quem-somos'}>
-            <button>Saiba mais</button>
-          </Link>
+          <button onClick={() => navigate('/quem-somos')}>Saiba mais</button>
         </article>
 
-        <img src={quemSomos} alt="Quem somos banner" />
+        <img src={quemSomos} alt="Quem somos banner" loading="lazy" />
       </section>
 
       <section id="quem-somos">
-        <img src={consultoria} alt="Consultoria banner" />
+        <img src={consultoria} alt="Consultoria banner" loading="lazy" />
 
         <article>
           <h1>CONSULTORIA</h1>
@@ -40,9 +38,7 @@ export default function Home() {
             certificados.
           </p>
 
-          <Link to={'/consultoria'}>
-            <button>Conheça agora</button>
-          </Link>
+          <button onClick={() => navigate('/consultoria')}>Saiba mais</button>
         </article>
       </section>
 
@@ -51,18 +47,15 @@ export default function Home() {
           <h1>FALE CONOSCO</h1>
 
           <p>
-            Entre em contato conosco para obter mais informações sobre nossos
-            serviços e produtos. Nossa equipe experiente de atendimento ao
-            cliente pode ajudá-lo(a) a encontrar o que você precisa e
-            orientá-lo(a) sobre as opções.
+            Entre em contato a gente para obter mais informações sobre nossos
+            serviços e produtos. Nossa equipe de atendimento ao cliente é
+            experiente e pode ajudá-lo a encontrar o que precisa.
           </p>
 
-          <Link to={'/contato'}>
-            <button>Agende já</button>
-          </Link>
+          <button onClick={() => navigate('/contato')}>Contate-nos</button>
         </article>
 
-        <img src={contato} alt="Contato banner" />
+        <img src={contato} alt="Contato banner" loading="lazy" />
       </section>
     </main>
   )

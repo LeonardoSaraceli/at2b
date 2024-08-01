@@ -2,13 +2,14 @@ import at2b from '../assets/images/AT2B.png'
 import location from '../assets/images/location.svg'
 import email from '../assets/images/email.svg'
 import '../assets/styles/Footer.css'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
     <footer>
-      <a href="#home">
+      <Link to={'/'}>
         <img src={at2b} alt="AT2B logo" id="at2b-logo" />
-      </a>
+      </Link>
 
       <div id="divisor"></div>
 

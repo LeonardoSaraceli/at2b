@@ -1,0 +1,51 @@
+#about {
+  display: grid;
+  gap: 8rem;
+  padding: 8rem;
+  
+  #quem-somos {
+    p {
+      opacity: 56%;
+    }
+  }
+
+  section {
+    display: grid;
+    gap: 2rem;
+
+    h1 {
+      font-size: 56px;
+    }
+
+    span,
+    p {
+      font-size: 21px;
+      line-height: 180%;
+      text-align: justify;
+    }
+
+    article {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      background-color: #b3e2a7;
+      border: 1px solid;
+      border-radius: 0.25rem;
+      align-items: center;
+      justify-content: center;
+      gap: 6rem;
+      padding: 1rem 6rem;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style-type: none;
+        column-gap: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+#contact {
+  display: grid;
+  padding: 8rem;
+  gap: 8rem;
+
+  section {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 4rem;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+  }
+
+  #entre-em-contato {
+    display: grid;
+    grid-template:
+      'h1 h1'
+      'form ul' / 1fr 30rem;
+
+    h1 {
+      grid-area: h1;
+    }
+
+    form {
+      display: grid;
+      gap: 2rem;
+      grid-template:
+        'text email'
+        'textarea textarea'
+        '. button';
+      grid-area: form;
+
+      #nome {
+        grid-area: text;
+      }
+
+      #email {
+        grid-area: email;
+      }
+
+      textarea {
+        resize: none;
+        grid-area: textarea;
+        height: 200px;
+      }
+
+      input,
+      textarea,
+      button {
+        padding: 1rem;
+        background-color: #b3e2a7;
+        border: 1px solid;
+        border-radius: 0.25rem;
+        color: black;
+        font-weight: 100;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+      }
+
+      input::placeholder,
+      textarea::placeholder,
+      button {
+        color: black;
+        font-weight: 100;
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      button {
+        cursor: pointer;
+        grid-area: button;
+        transition: all 0.1s linear;
+        width: 50%;
+        justify-self: right;
+      }
+
+      button:hover {
+        background-color: rgb(160, 204, 150);
+      }
+    }
+
+    ul {
+      display: grid;
+      gap: 2rem;
+      grid-area: ul;
+      list-style-type: none;
+
+      a {
+        color: currentColor;
+        text-decoration: none;
+        justify-self: left;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      span {
+        font-size: 18px;
+        line-height: 180%;
+        text-align: justify;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}

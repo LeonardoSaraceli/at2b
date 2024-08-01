@@ -1,0 +1,47 @@
+#consultoria {
+  display: grid;
+  gap: 2rem;
+  padding: 8rem;
+
+  span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 180%;
+    text-align: justify;
+    opacity: 56%;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: space-between;
+
+    li {
+      display: grid;
+      padding: 2rem;
+      gap: 1rem;
+      background-color: #b3e2a7;
+      border: 1px solid;
+      border-radius: 0.25rem;
+      justify-items: center;
+      transition: all .15s linear;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    li:hover {
+      transform: scale(1.1);
+    }
+  }
+}
