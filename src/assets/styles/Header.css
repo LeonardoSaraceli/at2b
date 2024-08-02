@@ -50,3 +50,183 @@ header {
     }
   }
 }
+
+/* Monitores 8k */
+@media screen and (min-width: 5760px) {
+  header {
+    padding: 8rem 32rem;
+
+    span {
+      font-size: 110px;
+    }
+
+    nav {
+      #right-side {
+        gap: 8rem;
+      }
+    }
+
+    #left-side {
+      gap: 8rem;
+
+      li {
+        gap: 6rem;
+
+        img {
+          width: 220px;
+          height: 220px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 4k */
+@media screen and (max-width: 5759px) and (min-width: 2943px) {
+  header {
+    padding: 4rem 16rem;
+
+    span {
+      font-size: 48px;
+    }
+
+    nav {
+      #right-side {
+        gap: 6rem;
+      }
+    }
+
+    #left-side {
+      gap: 6rem;
+
+      li {
+        gap: 2rem;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores QHD */
+@media screen and (max-width: 2942px) and (min-width: 2300px) {
+  header {
+    padding: 3rem 8rem;
+
+    span {
+      font-size: 32px;
+    }
+
+    nav {
+      #right-side {
+        gap: 4rem;
+      }
+    }
+
+    #left-side {
+      gap: 4rem;
+
+      li {
+        gap: 1rem;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 2k */
+@media screen and (max-width: 2299px) and (min-width: 2048px) {
+  header {
+    padding: 2rem 8rem;
+
+    span {
+      font-size: 28px;
+    }
+
+    nav {
+      #right-side {
+        gap: 3rem;
+      }
+    }
+
+    #left-side {
+      gap: 3rem;
+
+      li {
+        gap: 1rem;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 1080p */
+@media screen and (max-width: 2047px) and (min-width: 1620px) {
+  header {
+    padding: 2rem 6rem;
+
+    span {
+      font-size: 24px;
+    }
+
+    nav {
+      #right-side {
+        gap: 3rem;
+      }
+    }
+
+    #left-side {
+      gap: 3rem;
+
+      li {
+        gap: 1rem;
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 720p */
+@media screen and (max-width: 1619px) and (min-width: 720px) {
+  header {
+    padding: 1rem 6rem;
+
+    span {
+      font-size: 16px;
+    }
+
+    nav {
+      #right-side {
+        gap: 2rem;
+      }
+    }
+
+    #left-side {
+      gap: 2rem;
+
+      li {
+        gap: 0.5rem;
+
+        img {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}

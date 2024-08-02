@@ -72,7 +72,7 @@
         font-weight: 100;
         font-family: 'Montserrat', sans-serif;
       }
-      
+
       button {
         cursor: pointer;
         grid-area: button;
@@ -119,6 +119,343 @@
       img {
         width: 50px;
         height: 50px;
+      }
+    }
+  }
+}
+
+/* Monitores 8k */
+@media screen and (min-width: 5760px) {
+  #contact {
+    padding: 32rem;
+    gap: 32rem;
+
+    section {
+      row-gap: 18rem;
+      column-gap: 32rem;
+    }
+
+    h1 {
+      font-size: 220px;
+    }
+
+    iframe {
+      height: 1800px;
+    }
+
+    #entre-em-contato {
+      grid-template:
+        'h1 h1'
+        'form ul' / 1fr 140rem;
+
+      form {
+        gap: 18rem;
+
+        textarea {
+          height: 1200px;
+        }
+
+        input,
+        textarea,
+        button {
+          padding: 8rem;
+          border: 8px solid;
+          font-size: 120px;
+        }
+      }
+
+      ul {
+        gap: 18rem;
+
+        span {
+          font-size: 120px;
+        }
+
+        li {
+          gap: 8rem;
+        }
+
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 4k */
+@media screen and (max-width: 5759px) and (min-width: 2943px) {
+  #contact {
+    padding: 16rem;
+    gap: 16rem;
+
+    section {
+      row-gap: 6rem;
+      column-gap: 16rem;
+    }
+
+    h1 {
+      font-size: 100px;
+    }
+
+    iframe {
+      height: 800px;
+    }
+
+    #entre-em-contato {
+      grid-template:
+        'h1 h1'
+        'form ul' / 1fr 70rem;
+
+      form {
+        gap: 6rem;
+
+        textarea {
+          height: 400px;
+        }
+
+        input,
+        textarea,
+        button {
+          padding: 4rem;
+          border: 2px solid;
+          font-size: 48px;
+        }
+      }
+
+      ul {
+        gap: 6rem;
+
+        span {
+          font-size: 48px;
+        }
+
+        li {
+          gap: 4rem;
+        }
+
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores QHD */
+@media screen and (max-width: 2942px) and (min-width: 2300px) {
+  #contact {
+    padding: 8rem;
+    gap: 8rem;
+
+    section {
+      row-gap: 4rem;
+      column-gap: 8rem;
+    }
+
+    h1 {
+      font-size: 80px;
+    }
+
+    iframe {
+      height: 600px;
+    }
+
+    #entre-em-contato {
+      grid-template:
+        'h1 h1'
+        'form ul' / 1fr 50rem;
+
+      form {
+        gap: 4rem;
+
+        textarea {
+          height: 300px;
+        }
+
+        input,
+        textarea,
+        button {
+          padding: 2rem;
+          font-size: 26px;
+        }
+      }
+
+      ul {
+        gap: 4rem;
+
+        span {
+          font-size: 32px;
+        }
+
+        li {
+          gap: 2rem;
+        }
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 2k */
+@media screen and (max-width: 2299px) and (min-width: 2048px) {
+  #contact {
+    padding: 8rem;
+    gap: 8rem;
+
+    section {
+      row-gap: 4rem;
+      column-gap: 8rem;
+    }
+
+    h1 {
+      font-size: 72px;
+    }
+
+    iframe {
+      height: 500px;
+    }
+
+    #entre-em-contato {
+      grid-template:
+        'h1 h1'
+        'form ul' / 1fr 50rem;
+
+      form {
+        gap: 4rem;
+
+        textarea {
+          height: 300px;
+        }
+
+        input,
+        textarea,
+        button {
+          padding: 2rem;
+          font-size: 26px;
+        }
+      }
+
+      ul {
+        gap: 4rem;
+
+        span {
+          font-size: 32px;
+        }
+
+        li {
+          gap: 2rem;
+        }
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 1080p */
+@media screen and (max-width: 2047px) and (min-width: 1620px) {
+  #contact {
+    padding: 6rem;
+    gap: 6rem;
+
+    section {
+      row-gap: 3rem;
+      column-gap: 6rem;
+    }
+
+    h1 {
+      font-size: 62px;
+    }
+
+    iframe {
+      height: 500px;
+    }
+
+    #entre-em-contato {
+      grid-template:
+        'h1 h1'
+        'form ul' / 1fr 45rem;
+
+      form {
+        gap: 3rem;
+
+        textarea {
+          height: 250px;
+        }
+
+        input,
+        textarea,
+        button {
+          padding: 2rem;
+          font-size: 24px;
+        }
+      }
+
+      ul {
+        gap: 3rem;
+
+        span {
+          font-size: 28px;
+        }
+
+        li {
+          gap: 2rem;
+        }
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 720p */
+@media screen and (max-width: 1619px) and (min-width: 720px) {
+  #contact {
+    padding: 6rem;
+    gap: 6rem;
+
+    section {
+      row-gap: 1.5rem;
+      column-gap: 3rem;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+    iframe {
+      height: 300px;
+    }
+
+    #entre-em-contato {
+      ul {
+        gap: 2rem;
+
+        span {
+          font-size: 21px;
+        }
+
+        li {
+          gap: 1rem;
+        }
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
       }
     }
   }

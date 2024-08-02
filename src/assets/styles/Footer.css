@@ -1,54 +1,288 @@
 footer {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+
+  #at2b-logo {
+    height: 140px;
+  }
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  ul {
     display: grid;
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
+    list-style-type: none;
     gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    color: white;
-    padding: 2rem 0;
+
+    li {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      align-items: center;
+      gap: 0.5rem;
+
+      a {
+        display: grid;
+        grid-template-columns: min-content;
+
+        #location-url {
+          line-height: 180%;
+          width: 300px;
+          text-align: justify;
+        }
+
+        span:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  #divisor {
+    height: 80%;
+    width: 2px;
+    background-color: white;
+  }
+}
+
+/* Monitores 8k */
+@media screen and (min-width: 5760px) {
+  footer {
+    gap: 16rem;
+    padding: 12rem 0;
 
     #at2b-logo {
-        height: 140px;
-    }
-
-    a {
-        color: currentColor;
-        text-decoration: none;
+      height: 640px;
     }
 
     ul {
-        display: grid;
-        grid-template-columns: repeat(2, max-content);
-        list-style-type: none;
-        gap: 2rem;
+      gap: 16rem;
 
-        li {
-            display: grid;
-            grid-template-columns: repeat(2, max-content);
-            align-items: center;
-            gap: 0.5rem;
+      li {
+        gap: 8rem;
 
-            a {
-                display: grid;
-                grid-template-columns: min-content;
-
-                #location-url {
-                    line-height: 180%;
-                    width: 300px;
-                    text-align: justify;
-                }
-
-                span:hover {
-                    text-decoration: underline;
-                }
-            }
+        span {
+          font-size: 120px;
         }
+
+        img {
+          width: 220px;
+          height: 220px;
+        }
+
+        a {
+          #location-url {
+            width: 1800px;
+          }
+        }
+      }
     }
 
     #divisor {
-        height: 80%;
-        width: 2px;
-        background-color: white;
+      width: 16px;
     }
+  }
+}
+
+/* Monitores 8k */
+@media screen and (max-width: 5759px) and (min-width: 2943px) {
+  footer {
+    gap: 8rem;
+    padding: 4rem 0;
+
+    #at2b-logo {
+      height: 280px;
+    }
+
+    ul {
+      gap: 8rem;
+
+      li {
+        gap: 4rem;
+
+        span {
+          font-size: 48px;
+        }
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+
+        a {
+          #location-url {
+            width: 800px;
+          }
+        }
+      }
+    }
+
+    #divisor {
+      width: 8px;
+    }
+  }
+}
+
+/* Monitores QHD */
+@media screen and (max-width: 2942px) and (min-width: 2300px) {
+  footer {
+    gap: 4rem;
+    padding: 4rem 0;
+
+    #at2b-logo {
+      height: 180px;
+    }
+
+    ul {
+      gap: 4rem;
+
+      li {
+        gap: 2rem;
+
+        span {
+          font-size: 32px;
+        }
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+
+        a {
+          #location-url {
+            width: 700px;
+          }
+        }
+      }
+    }
+
+    #divisor {
+      width: 4px;
+    }
+  }
+}
+
+/* Monitores 2k */
+@media screen and (max-width: 2299px) and (min-width: 2048px) {
+  footer {
+    gap: 3rem;
+    padding: 3rem 0;
+
+    #at2b-logo {
+      height: 160px;
+    }
+
+    ul {
+      gap: 3rem;
+
+      li {
+        gap: 1.5rem;
+
+        span {
+          font-size: 28px;
+        }
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+
+        a {
+          #location-url {
+            width: 600px;
+          }
+        }
+      }
+    }
+
+    #divisor {
+      width: 3px;
+    }
+  }
+}
+
+/* Monitores 1080p */
+@media screen and (max-width: 2047px) and (min-width: 1620px) {
+  footer {
+    gap: 3rem;
+    padding: 3rem 0;
+
+    #at2b-logo {
+      height: 160px;
+    }
+
+    ul {
+      gap: 3rem;
+
+      li {
+        gap: 1rem;
+
+        span {
+          font-size: 24px;
+        }
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+
+        a {
+          #location-url {
+            width: 550px;
+          }
+        }
+      }
+    }
+
+    #divisor {
+      width: 3px;
+    }
+  }
+}
+
+/* Monitores 720p */
+@media screen and (max-width: 1619px) and (min-width: 720px) {
+  footer {
+    gap: 2rem;
+    padding: 2rem 0;
+
+    #at2b-logo {
+      height: 100px;
+    }
+
+    ul {
+      gap: 2rem;
+
+      li {
+        gap: 1rem;
+
+        span {
+          font-size: 16px;
+        }
+
+        img {
+          width: 35px;
+          height: 35px;
+        }
+
+        a {
+          #location-url {
+            width: 350px;
+          }
+        }
+      }
+    }
+
+    #divisor {
+      width: 2px;
+    }
+  }
 }

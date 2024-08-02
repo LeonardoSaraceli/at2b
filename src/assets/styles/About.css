@@ -2,7 +2,7 @@
   display: grid;
   gap: 8rem;
   padding: 8rem;
-  
+
   #quem-somos {
     p {
       opacity: 56%;
@@ -45,6 +45,189 @@
         grid-template-columns: repeat(3, 1fr);
         list-style-type: none;
         column-gap: 2rem;
+      }
+    }
+  }
+}
+
+/* Monitores 8k */
+@media screen and (min-width: 5760px) {
+  #about {
+    gap: 32rem;
+    padding: 32rem;
+
+    section {
+      gap: 16rem;
+
+      h1 {
+        font-size: 220px;
+      }
+
+      span,
+      p {
+        font-size: 140px;
+      }
+
+      article {
+        padding: 8rem 24rem;
+        border: 8px solid;
+        gap: 16rem;
+
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 4k */
+@media screen and (max-width: 5759px) and (min-width: 2943px) {
+  #about {
+    gap: 16rem;
+    padding: 16rem;
+
+    section {
+      gap: 8rem;
+
+      h1 {
+        font-size: 100px;
+      }
+
+      span,
+      p {
+        font-size: 56px;
+      }
+
+      article {
+        padding: 4rem 12rem;
+
+        img {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores QHD */
+@media screen and (max-width: 2942px) and (min-width: 2300px) {
+  #about {
+    gap: 8rem;
+    padding: 8rem;
+
+    section {
+      gap: 4rem;
+
+      h1 {
+        font-size: 80px;
+      }
+
+      span,
+      p {
+        font-size: 32px;
+      }
+
+      article {
+        padding: 2rem 6rem;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 2k */
+@media screen and (max-width: 2299px) and (min-width: 2048px) {
+  #about {
+    gap: 8rem;
+    padding: 8rem;
+
+    section {
+      gap: 3rem;
+
+      h1 {
+        font-size: 72px;
+      }
+
+      span,
+      p {
+        font-size: 32px;
+      }
+
+      article {
+        padding: 2rem 4rem;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 1080p */
+@media screen and (max-width: 2047px) and (min-width: 1620px) {
+  #about {
+    gap: 6rem;
+    padding: 6rem;
+
+    section {
+      gap: 3rem;
+
+      h1 {
+        font-size: 62px;
+      }
+
+      span,
+      p {
+        font-size: 28px;
+      }
+
+      article {
+        padding: 2rem 4rem;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+/* Monitores 720p */
+@media screen and (max-width: 1619px) and (min-width: 720px) {
+  #about {
+    gap: 6rem;
+    padding: 6rem;
+
+    section {
+      gap: 2rem;
+
+      h1 {
+        font-size: 48px;
+      }
+
+      span,
+      p {
+        font-size: 21px;
+      }
+
+      article {
+        gap: 2rem;
+        padding: 1rem 2rem;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
       }
     }
   }
