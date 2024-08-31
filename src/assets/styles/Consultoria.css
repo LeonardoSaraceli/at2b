@@ -7,21 +7,12 @@
   section {
     display: grid;
     grid-template-rows: repeat(3, max-content);
-    gap: 2rem;
-    padding: 8rem 4rem;
-    max-width: 90rem;
 
     span {
-      font-size: 21px;
       font-weight: bold;
     }
 
-    h1 {
-      font-size: 48px;
-    }
-
     p {
-      font-size: 21px;
       line-height: 180%;
       text-align: justify;
       color: #414141;
@@ -29,27 +20,183 @@
 
     ul {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
 
       li {
         display: grid;
-        padding: 2rem;
         gap: 1rem;
         background-color: #b3e2a7;
         border: 1px solid;
         border-radius: 0.25rem;
         justify-items: center;
         transition: all 0.1s linear;
-
-        svg {
-          width: 64px;
-          height: 64px;
-        }
       }
 
       li:hover {
         background-color: rgb(160, 204, 150);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #consultoria {
+    section {
+      gap: 2rem;
+      padding: 2rem 1rem 3rem 1rem;
+      max-width: 16.5rem;
+
+      h1 {
+        font-size: 21px;
+      }
+
+      ul {
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+
+        li {
+          padding: 2rem;
+
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 379px) and (min-width: 321px) {
+  #consultoria {
+    section {
+      gap: 2rem;
+      padding: 2rem 1rem 3rem 1rem;
+      max-width: 19rem;
+
+      h1 {
+        font-size: 24px;
+      }
+
+      ul {
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+
+        li {
+          padding: 2rem;
+
+          svg {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 380px) {
+  #consultoria {
+    section {
+      gap: 2rem;
+      padding: 2rem 1rem 3rem 1rem;
+      max-width: 22rem;
+
+      span {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      ul {
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+
+        li {
+          padding: 2rem;
+
+          svg {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  #consultoria {
+    section {
+      gap: 2rem;
+      padding: 4rem 2rem 6rem 4rem;
+      max-width: 35rem;
+
+      span {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      ul {
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+
+        li {
+          padding: 2rem;
+
+          svg {
+            width: 48px;
+            height: 48px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #consultoria {
+    section {
+      gap: 2rem;
+      padding: 8rem 4rem;
+      max-width: 90rem;
+
+      span {
+        font-size: 21px;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 21px;
+      }
+
+      ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+        li {
+          padding: 2rem;
+
+          svg {
+            width: 64px;
+            height: 64px;
+          }
+        }
       }
     }
   }

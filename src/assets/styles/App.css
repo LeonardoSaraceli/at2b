@@ -11,7 +11,13 @@
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   #bars-icon {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #bars-icon {
+    display: none;
   }
 }

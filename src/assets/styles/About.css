@@ -174,8 +174,8 @@
 
     section {
       gap: 2rem;
-      padding: 2rem 1rem;
-      max-width: 30rem;
+      padding: 4rem 2rem;
+      max-width: 35rem;
 
       h1 {
         font-size: 32px;

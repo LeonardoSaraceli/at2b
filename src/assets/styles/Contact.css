@@ -7,36 +7,9 @@
 
   section {
     display: grid;
-    gap: 2rem 4rem;
-    grid-template:
-      'h1 h1'
-      'form ul';
-    padding: 8rem 4rem;
-    max-width: 90rem;
-
-    h1 {
-      grid-area: h1;
-      font-size: 48px;
-    }
 
     form {
-      grid-area: form;
       display: grid;
-      grid-template:
-        'name email'
-        'msg msg'
-        'btn btn';
-      gap: 2rem;
-
-      #name {
-        width: 300px;
-        grid-area: name;
-      }
-
-      #email {
-        width: 300px;
-        grid-area: email;
-      }
 
       input,
       textarea,
@@ -46,13 +19,10 @@
         border: 1px solid;
         border-radius: 0.25rem;
         font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
       }
 
       textarea {
-        height: 150px;
         resize: none;
-        grid-area: msg;
       }
 
       input::placeholder,
@@ -67,9 +37,6 @@
       }
 
       button {
-        grid-area: btn;
-        width: 100px;
-        justify-self: right;
         cursor: pointer;
         transition: all 0.1s linear;
       }
@@ -82,8 +49,6 @@
     ul {
       display: grid;
       grid-template-rows: repeat(4, max-content);
-      gap: 2rem;
-      grid-area: ul;
       align-content: center;
 
       li {
@@ -94,7 +59,6 @@
 
         a {
           display: grid;
-          max-width: 30rem;
 
           span:hover {
             text-decoration: underline;
@@ -102,14 +66,334 @@
         }
 
         span {
-          font-size: 21px;
           line-height: 180%;
           text-align: justify;
         }
+      }
+    }
+  }
+}
 
-        svg {
-          width: 32px;
-          height: 32px;
+@media screen and (max-width: 320px) {
+  #contact {
+    section {
+      gap: 2rem;
+      grid-template-rows: repeat(3, max-content);
+      padding: 2rem 1rem 3rem 1rem;
+      max-width: 18rem;
+
+      h1 {
+        font-size: 21px;
+      }
+
+      form {
+        grid-template-rows: repeat(4, max-content);
+        gap: 1rem;
+
+        input,
+        textarea {
+          width: 100%;
+        }
+
+        input,
+        textarea,
+        button {
+          font-size: 16px;
+        }
+
+        textarea {
+          height: 100px;
+        }
+
+        button {
+          width: max-content;
+          justify-self: right;
+          border: 1px solid black;
+          color: black;
+          font-weight: 400;
+        }
+      }
+
+      ul {
+        gap: 2rem;
+
+        li {
+          span,
+          a {
+            max-width: 12.5rem;
+          }
+
+          span {
+            font-size: 16px;
+          }
+
+          svg {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 379px) and (min-width: 321px) {
+  #contact {
+    section {
+      gap: 2rem;
+      grid-template-rows: repeat(3, max-content);
+      padding: 2rem 1rem 3rem 1rem;
+      max-width: 20rem;
+
+      h1 {
+        font-size: 24px;
+      }
+
+      form {
+        grid-template-rows: repeat(4, max-content);
+        gap: 1rem;
+
+        input,
+        textarea {
+          width: 100%;
+        }
+
+        input,
+        textarea,
+        button {
+          font-size: 16px;
+        }
+
+        textarea {
+          height: 100px;
+        }
+
+        button {
+          width: max-content;
+          justify-self: right;
+          border: 1px solid black;
+          color: black;
+          font-weight: 400;
+        }
+      }
+
+      ul {
+        gap: 2rem;
+
+        li {
+          span,
+          a {
+            max-width: 15rem;
+          }
+
+          span {
+            font-size: 16px;
+          }
+
+          svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 380px) {
+  #contact {
+    section {
+      gap: 2rem;
+      grid-template-rows: repeat(3, max-content);
+      padding: 2rem 1rem 3rem 1rem;
+      max-width: 25rem;
+
+      h1 {
+        font-size: 28px;
+      }
+
+      form {
+        grid-template-rows: repeat(4, max-content);
+        gap: 1rem;
+
+        input,
+        textarea {
+          width: 100%;
+        }
+
+        input,
+        textarea,
+        button {
+          font-size: 16px;
+        }
+
+        textarea {
+          height: 100px;
+        }
+
+        button {
+          width: max-content;
+          justify-self: right;
+          border: 1px solid black;
+          color: black;
+          font-weight: 400;
+        }
+      }
+
+      ul {
+        gap: 2rem;
+
+        li {
+          span,
+          a {
+            max-width: 15rem;
+          }
+
+          span {
+            font-size: 16px;
+          }
+
+          svg {
+            width: 21px;
+            height: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  #contact {
+    section {
+      gap: 2rem;
+      grid-template-rows: repeat(3, max-content);
+      padding: 4rem 2rem 6rem 2rem;
+      max-width: 80rem;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      form {
+        grid-template-rows: repeat(4, max-content);
+        gap: 1rem;
+
+        input,
+        textarea {
+          width: 100%;
+        }
+
+        input,
+        textarea,
+        button {
+          font-size: 18px;
+        }
+
+        textarea {
+          height: 125px;
+        }
+
+        button {
+          width: max-content;
+          justify-self: right;
+          border: 1px solid black;
+          color: black;
+          font-weight: 400;
+        }
+      }
+
+      ul {
+        gap: 2rem;
+
+        li {
+          span,
+          a {
+            max-width: 20rem;
+          }
+
+          span {
+            font-size: 18px;
+          }
+
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #contact {
+    section {
+      gap: 2rem 4rem;
+      grid-template:
+        'h1 h1'
+        'form ul';
+      padding: 8rem 4rem;
+      max-width: 90rem;
+
+      h1 {
+        grid-area: h1;
+        font-size: 48px;
+      }
+
+      form {
+        grid-area: form;
+        grid-template:
+          'name email'
+          'msg msg'
+          'btn btn';
+        gap: 2rem;
+
+        #name {
+          width: 300px;
+          grid-area: name;
+        }
+
+        #email {
+          width: 300px;
+          grid-area: email;
+        }
+
+        input,
+        textarea,
+        button {
+          font-size: 18px;
+        }
+
+        textarea {
+          height: 150px;
+          grid-area: msg;
+        }
+
+        button {
+          grid-area: btn;
+          width: 100px;
+          justify-self: right;
+        }
+      }
+
+      ul {
+        gap: 2rem;
+        grid-area: ul;
+
+        li {
+          a {
+            max-width: 30rem;
+          }
+
+          span {
+            font-size: 21px;
+          }
+
+          svg {
+            width: 32px;
+            height: 32px;
+          }
         }
       }
     }

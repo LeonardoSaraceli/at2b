@@ -48,11 +48,31 @@
       grid-template-rows: repeat(2, max-content);
       gap: 0.5rem;
       justify-items: center;
+    }
 
+    svg {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #hamburguer {
+    span {
+      font-size: 14px;
+    }
+
+    #bottom-side {
       svg {
         height: 16px;
         width: 16px;
       }
+    }
+
+    #escape {
+      width: 18px;
+      height: 18px;
     }
   }
 }
@@ -60,12 +80,19 @@
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   #hamburguer {
     span {
-      font-size: 18px;
+      font-size: 21px;
+    }
+
+    #bottom-side {
+      svg {
+        height: 24px;
+        width: 24px;
+      }
     }
 
     #escape {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
     }
   }
 }

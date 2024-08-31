@@ -25,7 +25,7 @@ export default function Home() {
       </section>
 
       <section>
-        {window.outerWidth >= 1280 && (
+        {window.innerWidth >= 1280 && (
           <img src={consultoria} alt="Consultoria banner" loading="lazy" />
         )}
 
@@ -44,7 +44,7 @@ export default function Home() {
           </a>
         </article>
 
-        {window.outerWidth < 1280 && (
+        {window.innerWidth < 1280 && (
           <img src={consultoria} alt="Consultoria banner" loading="lazy" />
         )}
       </section>
