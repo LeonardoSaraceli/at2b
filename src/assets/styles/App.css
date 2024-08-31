@@ -1,0 +1,17 @@
+#bars-icon {
+  width: 21px;
+  height: 21px;
+
+  justify-self: right;
+  position: sticky;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  #bars-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

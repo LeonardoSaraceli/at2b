@@ -1,51 +1,51 @@
-import { Link } from 'react-router-dom'
-import phone from '../assets/images/phone.svg'
-import time from '../assets/images/time.svg'
 import '../assets/styles/Header.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faClock } from '@fortawesome/free-regular-svg-icons'
 
 export default function Header() {
   return (
     <header>
       <ul id="left-side">
         <li>
-          <img src={phone} alt="Phone icon" />
-
           <a href="tel:+552133496955" target="_blank">
+            <FontAwesomeIcon icon={faPhone} />
+
             <span id="phone-number">+55 21 3349-6955</span>
           </a>
         </li>
 
         <li>
-          <img src={time} alt="Time icon" />
+          <FontAwesomeIcon icon={faClock} />
 
-          <span>Segunda à sexta, das 10h às 18h</span>
+          <span>Segunda a sexta, das 10h às 18h</span>
         </li>
       </ul>
 
       <nav>
         <ul id="right-side">
           <li>
-            <Link to={'/'}>
+            <a href="/">
               <span>Página Inicial</span>
-            </Link>
+            </a>
           </li>
 
           <li>
-            <Link to={'/quem-somos'}>
+            <a href="/quem-somos">
               <span>Quem Somos</span>
-            </Link>
+            </a>
           </li>
 
           <li>
-            <Link to={'/consultoria'}>
+            <a href="/consultoria">
               <span>Consultoria</span>
-            </Link>
+            </a>
           </li>
 
           <li>
-            <Link to={'/contato'}>
+            <a href="/contato">
               <span>Contato</span>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

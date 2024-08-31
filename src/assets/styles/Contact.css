@@ -1,55 +1,41 @@
 #contact {
   display: grid;
-  padding: 8rem;
-  gap: 8rem;
+  grid-template-rows: max-content;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
 
   section {
     display: grid;
-    row-gap: 2rem;
-    column-gap: 4rem;
-  }
-
-  h1 {
-    font-size: 56px;
-  }
-
-  iframe {
-    width: 100%;
-    height: 400px;
-    border: none;
-  }
-
-  #entre-em-contato {
-    display: grid;
+    gap: 2rem 4rem;
     grid-template:
       'h1 h1'
-      'form ul' / 1fr 30rem;
+      'form ul';
+    padding: 8rem 4rem;
+    max-width: 90rem;
 
     h1 {
       grid-area: h1;
+      font-size: 48px;
     }
 
     form {
-      display: grid;
-      gap: 2rem;
-      grid-template:
-        'text email'
-        'textarea textarea'
-        '. button';
       grid-area: form;
+      display: grid;
+      grid-template:
+        'name email'
+        'msg msg'
+        'btn btn';
+      gap: 2rem;
 
-      #nome {
-        grid-area: text;
+      #name {
+        width: 300px;
+        grid-area: name;
       }
 
       #email {
+        width: 300px;
         grid-area: email;
-      }
-
-      textarea {
-        resize: none;
-        grid-area: textarea;
-        height: 200px;
       }
 
       input,
@@ -59,26 +45,33 @@
         background-color: #b3e2a7;
         border: 1px solid;
         border-radius: 0.25rem;
-        color: black;
-        font-weight: 100;
         font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
+        font-size: 18px;
+      }
+
+      textarea {
+        height: 150px;
+        resize: none;
+        grid-area: msg;
       }
 
       input::placeholder,
-      textarea::placeholder,
-      button {
+      textarea::placeholder {
         color: black;
-        font-weight: 100;
-        font-family: 'Montserrat', sans-serif;
+      }
+
+      input:focus,
+      textarea:focus,
+      button:focus {
+        outline: none;
       }
 
       button {
-        cursor: pointer;
-        grid-area: button;
-        transition: all 0.1s linear;
-        width: 50%;
+        grid-area: btn;
+        width: 100px;
         justify-self: right;
+        cursor: pointer;
+        transition: all 0.1s linear;
       }
 
       button:hover {
@@ -88,373 +81,35 @@
 
     ul {
       display: grid;
+      grid-template-rows: repeat(4, max-content);
       gap: 2rem;
       grid-area: ul;
-      list-style-type: none;
-
-      a {
-        color: currentColor;
-        text-decoration: none;
-        justify-self: left;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      span {
-        font-size: 18px;
-        line-height: 180%;
-        text-align: justify;
-      }
+      align-content: center;
 
       li {
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: repeat(2, max-content);
         gap: 1rem;
         align-items: center;
-        justify-content: center;
-      }
 
-      img {
-        width: 50px;
-        height: 50px;
-      }
-    }
-  }
-}
+        a {
+          display: grid;
+          max-width: 30rem;
 
-/* Monitores 8k */
-@media screen and (min-width: 5760px) {
-  #contact {
-    padding: 32rem;
-    gap: 32rem;
-
-    section {
-      row-gap: 18rem;
-      column-gap: 32rem;
-    }
-
-    h1 {
-      font-size: 220px;
-    }
-
-    iframe {
-      height: 1800px;
-    }
-
-    #entre-em-contato {
-      grid-template:
-        'h1 h1'
-        'form ul' / 1fr 140rem;
-
-      form {
-        gap: 18rem;
-
-        textarea {
-          height: 1200px;
+          span:hover {
+            text-decoration: underline;
+          }
         }
-
-        input,
-        textarea,
-        button {
-          padding: 8rem;
-          border: 8px solid;
-          font-size: 120px;
-        }
-      }
-
-      ul {
-        gap: 18rem;
-
-        span {
-          font-size: 120px;
-        }
-
-        li {
-          gap: 8rem;
-        }
-
-        img {
-          width: 300px;
-          height: 300px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores 4k */
-@media screen and (max-width: 5759px) and (min-width: 2943px) {
-  #contact {
-    padding: 16rem;
-    gap: 16rem;
-
-    section {
-      row-gap: 6rem;
-      column-gap: 16rem;
-    }
-
-    h1 {
-      font-size: 100px;
-    }
-
-    iframe {
-      height: 800px;
-    }
-
-    #entre-em-contato {
-      grid-template:
-        'h1 h1'
-        'form ul' / 1fr 70rem;
-
-      form {
-        gap: 6rem;
-
-        textarea {
-          height: 400px;
-        }
-
-        input,
-        textarea,
-        button {
-          padding: 4rem;
-          border: 2px solid;
-          font-size: 48px;
-        }
-      }
-
-      ul {
-        gap: 6rem;
-
-        span {
-          font-size: 48px;
-        }
-
-        li {
-          gap: 4rem;
-        }
-
-        img {
-          width: 120px;
-          height: 120px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores QHD */
-@media screen and (max-width: 2942px) and (min-width: 2300px) {
-  #contact {
-    padding: 8rem;
-    gap: 8rem;
-
-    section {
-      row-gap: 4rem;
-      column-gap: 8rem;
-    }
-
-    h1 {
-      font-size: 80px;
-    }
-
-    iframe {
-      height: 600px;
-    }
-
-    #entre-em-contato {
-      grid-template:
-        'h1 h1'
-        'form ul' / 1fr 50rem;
-
-      form {
-        gap: 4rem;
-
-        textarea {
-          height: 300px;
-        }
-
-        input,
-        textarea,
-        button {
-          padding: 2rem;
-          font-size: 26px;
-        }
-      }
-
-      ul {
-        gap: 4rem;
-
-        span {
-          font-size: 32px;
-        }
-
-        li {
-          gap: 2rem;
-        }
-
-        img {
-          width: 80px;
-          height: 80px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores 2k */
-@media screen and (max-width: 2299px) and (min-width: 2048px) {
-  #contact {
-    padding: 8rem;
-    gap: 8rem;
-
-    section {
-      row-gap: 4rem;
-      column-gap: 8rem;
-    }
-
-    h1 {
-      font-size: 72px;
-    }
-
-    iframe {
-      height: 500px;
-    }
-
-    #entre-em-contato {
-      grid-template:
-        'h1 h1'
-        'form ul' / 1fr 50rem;
-
-      form {
-        gap: 4rem;
-
-        textarea {
-          height: 300px;
-        }
-
-        input,
-        textarea,
-        button {
-          padding: 2rem;
-          font-size: 26px;
-        }
-      }
-
-      ul {
-        gap: 4rem;
-
-        span {
-          font-size: 32px;
-        }
-
-        li {
-          gap: 2rem;
-        }
-
-        img {
-          width: 80px;
-          height: 80px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores 1080p */
-@media screen and (max-width: 2047px) and (min-width: 1620px) {
-  #contact {
-    padding: 6rem;
-    gap: 6rem;
-
-    section {
-      row-gap: 3rem;
-      column-gap: 6rem;
-    }
-
-    h1 {
-      font-size: 62px;
-    }
-
-    iframe {
-      height: 500px;
-    }
-
-    #entre-em-contato {
-      grid-template:
-        'h1 h1'
-        'form ul' / 1fr 45rem;
-
-      form {
-        gap: 3rem;
-
-        textarea {
-          height: 250px;
-        }
-
-        input,
-        textarea,
-        button {
-          padding: 2rem;
-          font-size: 24px;
-        }
-      }
-
-      ul {
-        gap: 3rem;
-
-        span {
-          font-size: 28px;
-        }
-
-        li {
-          gap: 2rem;
-        }
-
-        img {
-          width: 70px;
-          height: 70px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores 720p */
-@media screen and (max-width: 1619px) and (min-width: 720px) {
-  #contact {
-    padding: 6rem;
-    gap: 6rem;
-
-    section {
-      row-gap: 1.5rem;
-      column-gap: 3rem;
-    }
-
-    h1 {
-      font-size: 48px;
-    }
-
-    iframe {
-      height: 300px;
-    }
-
-    #entre-em-contato {
-      ul {
-        gap: 2rem;
 
         span {
           font-size: 21px;
+          line-height: 180%;
+          text-align: justify;
         }
 
-        li {
-          gap: 1rem;
-        }
-
-        img {
-          width: 45px;
-          height: 45px;
+        svg {
+          width: 32px;
+          height: 32px;
         }
       }
     }

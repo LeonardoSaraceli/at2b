@@ -7,10 +7,19 @@
 html {
   font-family: 'Montserrat', sans-serif;
   scrollbar-width: thin;
-  scroll-behavior: smooth;
   scrollbar-color: black white;
 }
 
 #root {
   display: grid;
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: currentColor;
+    width: max-content;
+  }
 }

@@ -1,215 +1,217 @@
 #about {
   display: grid;
-  gap: 8rem;
-  padding: 8rem;
-
-  #quem-somos {
-    p {
-      opacity: 56%;
-    }
-  }
+  justify-content: center;
 
   section {
     display: grid;
-    gap: 2rem;
-
-    h1 {
-      font-size: 56px;
-    }
 
     span,
     p {
-      font-size: 21px;
       line-height: 180%;
       text-align: justify;
+      color: #414141;
     }
 
     article {
       display: grid;
-      grid-template-columns: auto 1fr;
+      transition: all 0.1s linear;
       background-color: #b3e2a7;
       border: 1px solid;
       border-radius: 0.25rem;
       align-items: center;
       justify-content: center;
-      gap: 6rem;
-      padding: 1rem 6rem;
-
-      img {
-        width: 70px;
-        height: 70px;
-      }
 
       ul {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        list-style-type: none;
-        column-gap: 2rem;
-      }
-    }
-  }
-}
+        justify-content: space-between;
 
-/* Monitores 8k */
-@media screen and (min-width: 5760px) {
-  #about {
-    gap: 32rem;
-    padding: 32rem;
-
-    section {
-      gap: 16rem;
-
-      h1 {
-        font-size: 220px;
-      }
-
-      span,
-      p {
-        font-size: 140px;
-      }
-
-      article {
-        padding: 8rem 24rem;
-        border: 8px solid;
-        gap: 16rem;
-
-        img {
-          width: 300px;
-          height: 300px;
+        div {
+          display: grid;
+          grid-template-rows: repeat(3, max-content);
         }
       }
     }
-  }
-}
 
-/* Monitores 4k */
-@media screen and (max-width: 5759px) and (min-width: 2943px) {
-  #about {
-    gap: 16rem;
-    padding: 16rem;
-
-    section {
-      gap: 8rem;
-
-      h1 {
-        font-size: 100px;
-      }
-
-      span,
-      p {
-        font-size: 56px;
-      }
-
-      article {
-        padding: 4rem 12rem;
-
-        img {
-          width: 140px;
-          height: 140px;
-        }
-      }
+    article:hover {
+      background-color: rgb(160, 204, 150);
     }
   }
-}
 
-/* Monitores QHD */
-@media screen and (max-width: 2942px) and (min-width: 2300px) {
-  #about {
-    gap: 8rem;
-    padding: 8rem;
+  #quem-somos {
+    grid-template-rows: repeat(4, max-content);
+  }
 
-    section {
-      gap: 4rem;
-
-      h1 {
-        font-size: 80px;
-      }
-
-      span,
-      p {
-        font-size: 32px;
-      }
-
-      article {
-        padding: 2rem 6rem;
-
-        img {
-          width: 100px;
-          height: 100px;
-        }
-      }
-    }
+  #missao-e-valores {
+    grid-template-rows: repeat(3, max-content);
   }
 }
 
-/* Monitores 2k */
-@media screen and (max-width: 2299px) and (min-width: 2048px) {
+@media screen and (max-width: 320px) {
   #about {
-    gap: 8rem;
-    padding: 8rem;
-
-    section {
-      gap: 3rem;
-
-      h1 {
-        font-size: 72px;
-      }
-
-      span,
-      p {
-        font-size: 32px;
-      }
-
-      article {
-        padding: 2rem 4rem;
-
-        img {
-          width: 80px;
-          height: 80px;
-        }
-      }
+    #missao-e-valores {
+      padding: 2rem 1rem 4rem 1rem;
     }
-  }
-}
-
-/* Monitores 1080p */
-@media screen and (max-width: 2047px) and (min-width: 1620px) {
-  #about {
-    gap: 6rem;
-    padding: 6rem;
-
-    section {
-      gap: 3rem;
-
-      h1 {
-        font-size: 62px;
-      }
-
-      span,
-      p {
-        font-size: 28px;
-      }
-
-      article {
-        padding: 2rem 4rem;
-
-        img {
-          width: 80px;
-          height: 80px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores 720p */
-@media screen and (max-width: 1619px) and (min-width: 720px) {
-  #about {
-    gap: 6rem;
-    padding: 6rem;
 
     section {
       gap: 2rem;
+      padding: 2rem 1rem;
+      max-width: 16rem;
+
+      h1 {
+        font-size: 21px;
+      }
+
+      span,
+      p {
+        font-size: 16px;
+      }
+
+      article {
+        grid-template-rows: repeat(2, max-content);
+        gap: 2rem;
+        padding: 2rem;
+        justify-items: center;
+
+        svg {
+          height: 24px;
+          width: 24px;
+        }
+
+        ul {
+          grid-template-rows: repeat(3, max-content);
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 379px) and (min-width: 321px) {
+  #about {
+    #missao-e-valores {
+      padding: 2rem 1rem 4rem 1rem;
+    }
+
+    section {
+      gap: 2rem;
+      padding: 2rem 1rem;
+      max-width: 18rem;
+
+      h1 {
+        font-size: 24px;
+      }
+
+      span,
+      p {
+        font-size: 16px;
+      }
+
+      article {
+        grid-template-rows: repeat(2, max-content);
+        gap: 2rem;
+        padding: 2rem;
+        justify-items: center;
+
+        svg {
+          height: 28px;
+          width: 28px;
+        }
+
+        ul {
+          grid-template-rows: repeat(3, max-content);
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 380px) {
+  #about {
+    #missao-e-valores {
+      padding: 2rem 1rem 4rem 1rem;
+    }
+
+    section {
+      gap: 2rem;
+      padding: 2rem 1rem;
+      max-width: 22rem;
+
+      h1 {
+        font-size: 28px;
+      }
+
+      span,
+      p {
+        font-size: 16px;
+      }
+
+      article {
+        grid-template-rows: repeat(2, max-content);
+        gap: 2rem;
+        padding: 2rem;
+        justify-items: center;
+
+        svg {
+          height: 32px;
+          width: 32px;
+        }
+
+        ul {
+          grid-template-rows: repeat(3, max-content);
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  #about {
+    #missao-e-valores {
+      padding: 2rem 1rem 4rem 1rem;
+    }
+
+    section {
+      gap: 2rem;
+      padding: 2rem 1rem;
+      max-width: 30rem;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      span,
+      p {
+        font-size: 18px;
+      }
+
+      article {
+        grid-template-rows: repeat(2, max-content);
+        gap: 2rem;
+        padding: 2rem;
+        justify-items: center;
+
+        svg {
+          height: 36px;
+          width: 36px;
+        }
+
+        ul {
+          grid-template-rows: repeat(3, max-content);
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #about {
+    section {
+      gap: 2rem;
+      padding: 8rem 4rem;
+      max-width: 90rem;
 
       h1 {
         font-size: 48px;
@@ -221,12 +223,18 @@
       }
 
       article {
-        gap: 2rem;
-        padding: 1rem 2rem;
+        grid-template-columns: auto 1fr;
+        gap: 6rem;
+        padding: 2rem 4rem;
 
-        img {
-          width: 60px;
-          height: 60px;
+        svg {
+          height: 64px;
+          width: 64px;
+        }
+
+        ul {
+          grid-template-columns: repeat(3, max-content);
+          gap: 2rem;
         }
       }
     }

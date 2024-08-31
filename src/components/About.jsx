@@ -1,6 +1,7 @@
-import missao from '../assets/images/missao.svg'
-import valores from '../assets/images/valores.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../assets/styles/About.css'
+import { faBullseye } from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-regular-svg-icons'
 
 export default function About() {
   return (
@@ -31,11 +32,11 @@ export default function About() {
         </p>
       </section>
 
-      <section>
+      <section id="missao-e-valores">
         <h1>NOSSA MISSÃO E VALORES</h1>
 
         <article>
-          <img src={missao} alt="Missão icon" />
+          <FontAwesomeIcon icon={faBullseye} />
 
           <p>
             Superar as expectativas de nossos clientes, proporcionando as
@@ -46,44 +47,50 @@ export default function About() {
         </article>
 
         <article>
-          <img src={valores} alt="Valores icon" />
+          <FontAwesomeIcon icon={faStar} />
 
           <ul>
-            <li>
-              <span>I. Ética</span>
-            </li>
+            <div>
+              <li>
+                <span>I. Ética</span>
+              </li>
 
-            <li>
-              <span>II. Foco em resultados</span>
-            </li>
+              <li>
+                <span>II. Foco em resultados</span>
+              </li>
 
-            <li>
-              <span>III. Comprometimento</span>
-            </li>
+              <li>
+                <span>III. Comprometimento</span>
+              </li>
+            </div>
 
-            <li>
-              <span>IV. Profissionalismo</span>
-            </li>
+            <div>
+              <li>
+                <span>IV. Profissionalismo</span>
+              </li>
 
-            <li>
-              <span>V. Criatividade</span>
-            </li>
+              <li>
+                <span>V. Criatividade</span>
+              </li>
 
-            <li>
-              <span>VI. Determinação</span>
-            </li>
+              <li>
+                <span>VI. Determinação</span>
+              </li>
+            </div>
 
-            <li>
-              <span>VII. Dinamismo</span>
-            </li>
+            <div>
+              <li>
+                <span>VII. Dinamismo</span>
+              </li>
 
-            <li>
-              <span>VIII. Iniciativa</span>
-            </li>
+              <li>
+                <span>VIII. Iniciativa</span>
+              </li>
 
-            <li>
-              <span>IX. Eficiência</span>
-            </li>
+              <li>
+                <span>IX. Eficiência</span>
+              </li>
+            </div>
           </ul>
         </article>
       </section>

@@ -1,231 +1,20 @@
 #consultoria {
   display: grid;
-  gap: 2rem;
-  padding: 8rem;
-  height: 100vh;
-  grid-template-rows: repeat(3, max-content);
+  min-height: 100vh;
+  justify-content: center;
   align-content: center;
 
-  span {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  h1 {
-    font-size: 56px;
-  }
-
-  p {
-    font-size: 21px;
-    line-height: 180%;
-    text-align: justify;
-    opacity: 56%;
-  }
-
-  ul {
+  section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8rem;
-    justify-content: space-between;
-
-    li {
-      display: grid;
-      padding: 2rem;
-      gap: 1rem;
-      background-color: #b3e2a7;
-      border: 1px solid;
-      border-radius: 0.25rem;
-      justify-items: center;
-      transition: all 0.15s linear;
-
-      img {
-        width: 70px;
-        height: 70px;
-      }
-    }
-
-    li:hover {
-      transform: scale(1.1);
-    }
-  }
-}
-
-/* Monitores 8k */
-@media screen and (min-width: 5760px) {
-  #consultoria {
-    gap: 16rem;
-    padding: 32rem;
-
-    h1 {
-      font-size: 220px;
-    }
-
-    p {
-      font-size: 140px;
-    }
-
-    ul {
-      gap: 48rem;
-
-      li {
-        gap: 12rem;
-        padding: 12rem;
-        border: 8px solid;
-
-        img {
-          width: 340px;
-          height: 340px;
-        }
-
-        span {
-          font-size: 120px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores 4k */
-@media screen and (max-width: 5759px) and (min-width: 2943px) {
-  #consultoria {
-    gap: 8rem;
-    padding: 16rem;
-
-    h1 {
-      font-size: 100px;
-    }
-
-    p {
-      font-size: 56px;
-    }
-
-    ul {
-      gap: 32rem;
-
-      li {
-        gap: 4rem;
-        padding: 4rem;
-
-        img {
-          width: 180px;
-          height: 180px;
-        }
-
-        span {
-          font-size: 56px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores QHD */
-@media screen and (max-width: 2942px) and (min-width: 2300px) {
-  #consultoria {
-    gap: 6rem;
-    padding: 8rem;
-
-    h1 {
-      font-size: 80px;
-    }
-
-    p {
-      font-size: 32px;
-    }
-
-    ul {
-      gap: 24rem;
-
-      li {
-        gap: 2rem;
-        padding: 2rem;
-
-        img {
-          width: 120px;
-          height: 120px;
-        }
-
-        span {
-          font-size: 32px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores 2k */
-@media screen and (max-width: 2299px) and (min-width: 2048px) {
-  #consultoria {
-    gap: 4rem;
-    padding: 8rem;
-
-    h1 {
-      font-size: 72px;
-    }
-
-    p {
-      font-size: 32px;
-    }
-
-    ul {
-      gap: 18rem;
-
-      li {
-        gap: 2rem;
-        padding: 2rem;
-
-        img {
-          width: 100px;
-          height: 100px;
-        }
-
-        span {
-          font-size: 32px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores 1080p */
-@media screen and (max-width: 2047px) and (min-width: 1620px) {
-  #consultoria {
-    gap: 4rem;
-    padding: 6rem;
-
-    h1 {
-      font-size: 62px;
-    }
-
-    p {
-      font-size: 28px;
-    }
-
-    ul {
-      gap: 18rem;
-
-      li {
-        gap: 2rem;
-        padding: 2rem;
-
-        img {
-          width: 100px;
-          height: 100px;
-        }
-
-        span {
-          font-size: 28px;
-        }
-      }
-    }
-  }
-}
-
-/* Monitores 720p */
-@media screen and (max-width: 1619px) and (min-width: 720px) {
-  #consultoria {
+    grid-template-rows: repeat(3, max-content);
     gap: 2rem;
-    padding: 6rem;
+    padding: 8rem 4rem;
+    max-width: 90rem;
+
+    span {
+      font-size: 21px;
+      font-weight: bold;
+    }
 
     h1 {
       font-size: 48px;
@@ -233,23 +22,34 @@
 
     p {
       font-size: 21px;
+      line-height: 180%;
+      text-align: justify;
+      color: #414141;
     }
 
     ul {
-      gap: 10rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
 
       li {
+        display: grid;
+        padding: 2rem;
         gap: 1rem;
-        padding: 1rem;
+        background-color: #b3e2a7;
+        border: 1px solid;
+        border-radius: 0.25rem;
+        justify-items: center;
+        transition: all 0.1s linear;
 
-        img {
-          width: 60px;
-          height: 60px;
+        svg {
+          width: 64px;
+          height: 64px;
         }
+      }
 
-        span {
-          font-size: 21px;
-        }
+      li:hover {
+        background-color: rgb(160, 204, 150);
       }
     }
   }

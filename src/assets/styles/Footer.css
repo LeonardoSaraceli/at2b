@@ -1,41 +1,23 @@
 footer {
   display: grid;
-  grid-template-columns: repeat(3, max-content);
-  gap: 2rem;
-  align-items: center;
   justify-content: center;
   background-color: black;
   color: white;
-  padding: 2rem 0;
-
-  #at2b-logo {
-    height: 140px;
-  }
-
-  a {
-    color: currentColor;
-    text-decoration: none;
-  }
 
   ul {
     display: grid;
-    grid-template-columns: repeat(2, max-content);
-    list-style-type: none;
-    gap: 2rem;
 
     li {
       display: grid;
       grid-template-columns: repeat(2, max-content);
       align-items: center;
-      gap: 0.5rem;
+      gap: 1rem;
 
       a {
         display: grid;
-        grid-template-columns: min-content;
 
-        #location-url {
+        span {
           line-height: 180%;
-          width: 300px;
           text-align: justify;
         }
 
@@ -47,242 +29,186 @@ footer {
   }
 
   #divisor {
-    height: 80%;
-    width: 2px;
     background-color: white;
   }
 }
 
-/* Monitores 8k */
-@media screen and (min-width: 5760px) {
+@media screen and (max-width: 320px) {
   footer {
-    gap: 16rem;
-    padding: 12rem 0;
+    grid-template-rows: repeat(3, max-content);
+    gap: 1rem;
+    padding: 1rem;
 
-    #at2b-logo {
-      height: 640px;
+    img {
+      max-height: 60px;
     }
 
     ul {
-      gap: 16rem;
+      grid-template-rows: repeat(2, max-content);
+      gap: 1rem;
 
       li {
-        gap: 8rem;
-
-        span {
-          font-size: 120px;
-        }
-
-        img {
-          width: 220px;
-          height: 220px;
+        .icon {
+          width: 16px;
+          height: 16px;
         }
 
         a {
-          #location-url {
-            width: 1800px;
+          max-width: 12.5rem;
+
+          span {
+            font-size: 16px;
           }
         }
       }
     }
 
     #divisor {
-      width: 16px;
+      height: 1px;
     }
   }
 }
 
-/* Monitores 8k */
-@media screen and (max-width: 5759px) and (min-width: 2943px) {
+@media screen and (max-width: 379px) and (min-width: 321px) {
   footer {
-    gap: 8rem;
-    padding: 4rem 0;
+    grid-template-rows: repeat(3, max-content);
+    gap: 1rem;
+    padding: 2rem;
 
-    #at2b-logo {
-      height: 280px;
+    img {
+      max-height: 65px;
     }
 
     ul {
-      gap: 8rem;
+      grid-template-rows: repeat(2, max-content);
+      gap: 1rem;
 
       li {
-        gap: 4rem;
-
-        span {
-          font-size: 48px;
-        }
-
-        img {
-          width: 100px;
-          height: 100px;
+        .icon {
+          width: 16px;
+          height: 16px;
         }
 
         a {
-          #location-url {
-            width: 800px;
+          max-width: 12.5rem;
+
+          span {
+            font-size: 16px;
           }
         }
       }
     }
 
     #divisor {
-      width: 8px;
+      height: 1px;
     }
   }
 }
 
-/* Monitores QHD */
-@media screen and (max-width: 2942px) and (min-width: 2300px) {
+@media screen and (max-width: 767px) and (min-width: 380px) {
   footer {
-    gap: 4rem;
-    padding: 4rem 0;
+    grid-template-rows: repeat(3, max-content);
+    gap: 1rem;
+    padding: 2rem;
 
-    #at2b-logo {
-      height: 180px;
+    img {
+      max-height: 70px;
     }
 
     ul {
-      gap: 4rem;
+      grid-template-rows: repeat(2, max-content);
+      gap: 1rem;
 
       li {
-        gap: 2rem;
-
-        span {
-          font-size: 32px;
-        }
-
-        img {
-          width: 70px;
-          height: 70px;
+        .icon {
+          width: 18px;
+          height: 18px;
         }
 
         a {
-          #location-url {
-            width: 700px;
+          max-width: 15rem;
+
+          span {
+            font-size: 16px;
           }
         }
       }
     }
 
     #divisor {
-      width: 4px;
+      height: 1px;
     }
   }
 }
 
-/* Monitores 2k */
-@media screen and (max-width: 2299px) and (min-width: 2048px) {
+@media screen and (max-width: 1279px) and (min-width: 768px) {
   footer {
-    gap: 3rem;
-    padding: 3rem 0;
-
-    #at2b-logo {
-      height: 160px;
-    }
-
-    ul {
-      gap: 3rem;
-
-      li {
-        gap: 1.5rem;
-
-        span {
-          font-size: 28px;
-        }
-
-        img {
-          width: 60px;
-          height: 60px;
-        }
-
-        a {
-          #location-url {
-            width: 600px;
-          }
-        }
-      }
-    }
-
-    #divisor {
-      width: 3px;
-    }
-  }
-}
-
-/* Monitores 1080p */
-@media screen and (max-width: 2047px) and (min-width: 1620px) {
-  footer {
-    gap: 3rem;
-    padding: 3rem 0;
-
-    #at2b-logo {
-      height: 160px;
-    }
-
-    ul {
-      gap: 3rem;
-
-      li {
-        gap: 1rem;
-
-        span {
-          font-size: 24px;
-        }
-
-        img {
-          width: 60px;
-          height: 60px;
-        }
-
-        a {
-          #location-url {
-            width: 550px;
-          }
-        }
-      }
-    }
-
-    #divisor {
-      width: 3px;
-    }
-  }
-}
-
-/* Monitores 720p */
-@media screen and (max-width: 1619px) and (min-width: 720px) {
-  footer {
+    grid-template-rows: repeat(3, max-content);
     gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem;
 
-    #at2b-logo {
-      height: 100px;
+    img {
+      max-height: 85px;
     }
 
     ul {
+      grid-template-rows: repeat(2, max-content);
       gap: 2rem;
 
       li {
-        gap: 1rem;
-
-        span {
-          font-size: 16px;
-        }
-
-        img {
-          width: 35px;
-          height: 35px;
+        .icon {
+          width: 21px;
+          height: 21px;
         }
 
         a {
-          #location-url {
-            width: 350px;
+          max-width: 20rem;
+
+          span {
+            font-size: 18px;
           }
         }
       }
     }
 
     #divisor {
-      width: 2px;
+      height: 1px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  footer {
+    grid-template-columns: repeat(3, max-content);
+    gap: 2rem;
+    padding: 2rem;
+
+    img {
+      max-height: 100px;
+    }
+
+    ul {
+      grid-template-columns: repeat(2, max-content);
+      gap: 2rem;
+
+      li {
+        .icon {
+          width: 24px;
+          height: 24px;
+        }
+
+        a {
+          max-width: 20rem;
+
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    #divisor {
+      width: 1px;
     }
   }
 }

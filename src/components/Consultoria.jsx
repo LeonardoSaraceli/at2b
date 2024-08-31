@@ -1,12 +1,15 @@
-import gestao from '../assets/images/gestao.svg'
-import leanSixSigma from '../assets/images/lean-six-sigma.svg'
-import analise from '../assets/images/analise.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../assets/styles/Consultoria.css'
+import {
+  fa6,
+  faClipboardCheck,
+  faUsersGear,
+} from '@fortawesome/free-solid-svg-icons'
 
 export default function Consultoria() {
   return (
-    <main>
-      <section id="consultoria">
+    <main id="consultoria">
+      <section>
         <h1>CONSULTORIA</h1>
 
         <p>
@@ -19,19 +22,19 @@ export default function Consultoria() {
 
         <ul>
           <li>
-            <img src={gestao} alt="Gestão icon" />
+            <FontAwesomeIcon icon={faUsersGear} />
 
             <span>Gestão e processos</span>
           </li>
 
           <li>
-            <img src={leanSixSigma} alt="Lean Six Sigma icon" />
+            <FontAwesomeIcon icon={fa6} />
 
             <span>Lean Six Sigma</span>
           </li>
 
           <li>
-            <img src={analise} alt="Análise icon" />
+            <FontAwesomeIcon icon={faClipboardCheck} />
 
             <span>Análise de riscos</span>
           </li>
